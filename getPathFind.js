@@ -61,8 +61,8 @@ AStar = function (startPoint, endPoint, mapArray) {
             }
             );
             minF = Infinity;
-            for (var i = 0; i < queue.length; i++) {
-                let path = queue[i];
+            for (let n = 0; n < queue.length; n++) {
+                let path = queue[n];
                 let lastX = path[path.length - 1][0];
                 let lastY = path[path.length - 1][1];
                 if (lastX == endPoint[0] && lastY == endPoint[1]) {
